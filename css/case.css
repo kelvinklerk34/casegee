@@ -1,0 +1,286 @@
+/*.....RESET....*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    width: 100%;
+    float: left;
+}
+
+.inner{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*............CONTAINER...........*/
+
+body{
+    font-family: 'arial', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    padding: 1em 0;
+}
+
+#logo{
+    height: 80px;
+    background-image: url("../image/logo.png");
+    background-repeat: no-repeat;
+    width: 140px;
+}
+
+nav{
+    text-align: right;
+    padding-top: 1.5em;
+   
+}
+
+nav ul{
+    display: none;
+}
+
+
+
+#banner{
+    background-color:#ff0f7b;
+    height: 100vh;
+    background-image: url("../image/19.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+#banner-content{
+    height: 75vh;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#items{
+    background-color: #395b64;
+    width: fit-content;   
+}
+
+
+#stock,#gallery{
+    padding: 5em 0 ;
+    
+}
+
+.section-title{
+    text-align: center;
+    padding: bottom 2em ;
+}
+
+.shoe-box{
+    padding: 2em;
+    text-align: center;
+}
+
+.blog-post{
+    padding: 0 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#last-box{
+    background-image: url(../image/lastpic.png);
+    padding: 2em;
+}
+
+#last-box .inner{
+    background-color: rgba(255, 255, 255, 0.75);
+   
+}
+
+footer{
+    background-color: black;
+    padding: 5em 0 ;
+    color: white;
+}
+
+.company img{ 
+    height: 80px;
+    width: 160px;
+
+}
+
+.rigth-a{
+    padding: 2em;
+}
+
+
+
+
+
+/*............LIST..........*/
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 5em;
+    font-weight: 600;
+}
+
+.social ul li {
+    display: inline;
+    padding: 0 0.5em;
+}
+
+/*............LINKS..........*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #ff0fa5;
+}
+
+.button{
+    background-color: white;
+    color: #ff0f7b;
+    width: 100px;
+    text-align: center;
+    padding: 1em 0.5em ;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+.btn{
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+    padding: 1em 0.5em;
+    font-weight: 600;
+    margin:0 auto;
+}
+
+.blog-post>a{
+    margin-top: 20px;
+    text-decoration: underline;
+    padding-right: 2em;
+    
+}
+
+
+ul li{
+    list-style: none;
+
+}
+
+.footernav ul li a{
+    color: inherit;
+}
+
+.footernav ul li a:hover{
+    color: #ff0f7b;
+
+}
+
+.social ul li a{
+    color: white;
+}
+.social ul li a :hover{
+    color: #ff0f7b;
+
+}
+
+
+
+
+/*..............formating...........*/
+
+#banner-content>h1{
+    color: white;
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+#banner-content>p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sec-heading{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.price{
+    color: #ff0f7b;
+    margin-bottom: 20px; 
+}
+
+.blog-post>img{
+    margin-bottom: 20px;
+
+}
+
+.blog-post>h3, .blog-post>p{
+    margin-bottom: 20px;
+
+}
+footer div h3{
+    margin-bottom: 20px;
+}
+
+#menubar{
+    font-size: 3em;
+}
+
+
+
+@media screen and (min-width:769px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;} 
+    
+    /*............CONTAINER...........*/
+
+    
+    nav ul{
+        display: block;
+    }
+
+    
+    
+   #menubar{
+    display: none;
+   }
+
+    #gallery{
+        padding: 3em 0;
+    }
+}
